@@ -114,4 +114,790 @@
 
     <!-- BARRA DE NAVEGACIÓN -->
     <header id="main-navbar" class="fixed left-0 w-full z-40 bg-dark-950/90 backdrop-blur-md border-b border-white/10 transition-all top-[5px]">
-        <div class="max-w-7xl mx-auto
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#inicio" class="flex items-center gap-3 group">
+                <div class="w-[52px] h-[52px] rounded-full p-0.5 bg-gradient-to-tr from-gold-500 via-ydred-500 to-ydblue-600 shadow-lg shadow-gold-500/20 shrink-0 flex items-center justify-center">
+                    <img src="1000366642.jpg" alt="Logo YD" class="w-12 h-12 rounded-full object-cover bg-white" onerror="this.onerror=null; this.src='https://placehold.co/100x100/2c3e6b/ffffff?text=YD';">
+                </div>
+                <div>
+                    <span class="block font-serif font-extrabold text-sm sm:text-lg tracking-wider text-white group-hover:text-gold-400 transition-colors">
+                        CORTES Y ESTILOS <span class="text-gold-500">YD</span>
+                    </span>
+                    <span class="text-[11px] text-gray-400 flex items-center gap-1.5">
+                        <i class="fa-solid fa-location-dot text-ydred-500"></i>
+                        <span class="truncate max-w-[170px] sm:max-w-none">KM27 Carretera Sur, El Crucero</span>
+                    </span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-6 text-sm font-semibold text-gray-300">
+                <a href="#inicio" class="hover:text-gold-400 transition-colors">Inicio</a>
+                <a href="#galeria" class="hover:text-gold-400 transition-colors">Galería y Redes</a>
+                <a href="#servicios" class="hover:text-gold-400 transition-colors">Servicios y Precios</a>
+                <a href="#reservar" class="hover:text-gold-400 transition-colors">Agendar Cita</a>
+                <a href="#codigo-qr" class="hover:text-gold-400 transition-colors flex items-center gap-1.5 text-gold-400">
+                    <i class="fa-solid fa-qrcode"></i> Códigos QR
+                </a>
+                <a href="#ubicacion" class="hover:text-gold-400 transition-colors">Ubicación y Horarios</a>
+            </nav>
+
+            <div class="flex items-center gap-2.5">
+                <a href="#reservar" class="hidden sm:inline-flex items-center gap-2 bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 hover:to-amber-500 text-dark-950 font-extrabold text-xs sm:text-sm px-4 py-2.5 rounded-xl shadow-lg shadow-gold-500/20 transition-all">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>(505) 8876-7598</span>
+                </a>
+                <button id="mobile-menu-btn" type="button" aria-label="Abrir Menú" aria-expanded="false" class="lg:hidden p-2.5 rounded-xl bg-dark-800 border border-white/10 text-gray-200 hover:text-gold-400 transition-colors">
+                    <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-dark-950 border-b border-white/10 px-4 pt-3 pb-6 space-y-2.5 shadow-2xl">
+            <a href="#inicio" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Inicio</a>
+            <a href="#galeria" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Galería y Redes</a>
+            <a href="#servicios" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Servicios y Precios</a>
+            <a href="#reservar" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Agendar Cita</a>
+            <a href="#codigo-qr" class="mobile-link block py-2.5 px-3 rounded-xl bg-gold-500/10 text-gold-400 font-bold">
+                <i class="fa-solid fa-qrcode mr-2"></i>Códigos QR
+            </a>
+            <a href="#ubicacion" class="mobile-link block py-2.5 px-3 rounded-xl hover:bg-dark-800 text-gray-200 font-semibold">Ubicación y Horarios</a>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO -->
+    <section id="inicio" class="relative pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="WhatsApp Image 2026-10-25 at 12.34.13 PM.jpeg" alt="Barbería YD" class="w-full h-full object-cover object-center opacity-25 scale-105 filter contrast-125" onerror="this.onerror=null; this.src='1000378398.jpg';">
+            <div class="absolute inset-0 bg-gradient-to-t from-dark-900 via-dark-950/85 to-dark-950/90"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2.5">
+                        <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+                            Abierto Lunes a Domingo
+                        </span>
+                        <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full bg-ydblue-600/30 border border-ydblue-600/50 text-gray-200 text-xs font-semibold">
+                            <i class="fa-solid fa-map-pin text-gold-400"></i> KM27 Carretera Sur, El Crucero
+                        </span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white">
+                        BARBERÍA <br class="hidden sm:inline">
+                        <span class="gold-gradient-text">CORTES Y ESTILOS YD</span>
+                    </h1>
+
+                    <p class="text-gray-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Tu barbería de confianza en <strong class="text-white">El Crucero, Nicaragua</strong>. Especialistas en <span class="text-gold-400 font-semibold">Cortes Fade, Cortes para Niños, Clásicos, Recorte de Barba y Cejas, Limpieza Facial, Manicure y Pedicure</span>.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-2">
+                        <a href="#reservar" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-gold-500 to-amber-600 hover:from-gold-400 hover:to-amber-500 text-dark-950 font-extrabold px-7 py-4 rounded-xl shadow-xl shadow-gold-500/20 transition-all">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Reservar Turno Ahora</span>
+                        </a>
+                        <a href="#galeria" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-dark-800 hover:bg-dark-700 text-white border border-white/15 font-bold px-6 py-4 rounded-xl transition-all">
+                            <i class="fa-regular fa-images text-gold-400"></i>
+                            <span>Ver Galería y Redes</span>
+                        </a>
+                    </div>
+
+                    <div class="pt-4 grid grid-cols-1 sm:grid-cols-3 gap-3 text-left bg-dark-900/90 border border-white/10 p-4 rounded-2xl">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-emerald-500/15 border border-emerald-500/30 flex items-center justify-center text-emerald-400 shrink-0">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] text-gray-400 uppercase block font-semibold">WhatsApp / Turnos</span>
+                                <a href="https://wa.me/50588767598" target="_blank" rel="noopener noreferrer" class="text-sm font-extrabold text-white hover:text-gold-400">+505 8876-7598</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-gold-500/15 border border-gold-500/30 flex items-center justify-center text-gold-400 shrink-0">
+                                <i class="fa-regular fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <span class="text-[11px] text-gray-400 uppercase block font-semibold">Horario de Atención</span>
+                                <span class="text-xs font-bold text-white block">Lun-Vie: 10:00 AM - 7:00 PM</span>
+                                <span class="text-[11px] text-gold-400 font-semibold block">Sáb-Dom: 9:00 AM - 8:00 PM</span>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-xl bg-pink-500/15 border border-pink-500/30 flex items-center justify-center text-pink-400 shrink-0">
+                                <i class="fa-brands fa-instagram text-lg"></i>
+                            </div>
+                            <div class="overflow-hidden">
+                                <span class="text-[11px] text-gray-400 uppercase block font-semibold">Síguenos en IG</span>
+                                <a href="https://instagram.com/barberia_cortes_y_estlios_yd" target="_blank" rel="noopener noreferrer" class="text-xs font-bold text-white hover:text-gold-400 truncate block">
+                                    @barberia_cortes_y_estlios_yd
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <div class="absolute -inset-2 bg-gradient-to-tr from-gold-500/30 via-ydred-500/20 to-ydblue-600/30 rounded-3xl blur-xl"></div>
+                        <div class="relative bg-dark-800 border border-white/15 rounded-3xl overflow-hidden shadow-2xl">
+                            <div class="relative h-80 sm:h-96 overflow-hidden">
+                                <img src="WhatsApp Image 2026-10-25 at 12.34.13 PM.jpeg" alt="Barbería YD" class="w-full h-full object-cover object-center" onerror="this.onerror=null; this.src='1000520836.jpg';">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN GALERÍA Y REDES SOCIALES -->
+    <section id="galeria" class="py-20 bg-dark-950 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row lg:items-end justify-between mb-10 gap-6">
+                <div>
+                    <div class="inline-flex items-center gap-2 text-gold-400 text-xs font-bold uppercase tracking-widest mb-2">
+                        <i class="fa-solid fa-camera-retro"></i> Portafolio y Redes Sociales
+                    </div>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white">
+                        GALERÍA <span class="gold-gradient-text">CORTES Y ESTILOS YD</span>
+                    </h2>
+                    <p class="text-gray-400 text-sm sm:text-base mt-2 max-w-2xl">
+                        Descubre nuestros cortes, instalaciones y videos en TikTok y Facebook Reels.
+                    </p>
+                </div>
+
+                <div class="flex flex-wrap gap-2">
+                    <button type="button" onclick="filterGallery('todos')" data-gal="todos" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-extrabold bg-gold-500 text-dark-950 shadow-lg shadow-gold-500/20 transition-all">
+                        Todo
+                    </button>
+                    <button type="button" onclick="filterGallery('cortes')" data-gal="cortes" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all">
+                        Cortes y Cejas
+                    </button>
+                    <button type="button" onclick="filterGallery('local')" data-gal="local" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all">
+                        Local y Productos
+                    </button>
+                    <button type="button" onclick="filterGallery('redes')" data-gal="redes" class="gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all">
+                        <i class="fa-solid fa-video text-gold-400 mr-1"></i> TikTok y Facebook
+                    </button>
+                </div>
+            </div>
+
+            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SERVICIOS Y PRECIOS -->
+    <section id="servicios" class="py-20 bg-dark-900 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div class="space-y-2">
+                    <span class="text-gold-400 font-bold text-xs uppercase tracking-widest block">Pizarra Oficial de Servicios</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white">NUESTROS SERVICIOS Y PRECIOS</h2>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <button type="button" onclick="filterServices('todos')" data-srv="todos" class="srv-filter-btn px-4 py-2.5 rounded-xl text-xs font-extrabold bg-gold-500 text-dark-950 shadow-lg transition-all">
+                        Todos
+                    </button>
+                    <button type="button" onclick="filterServices('cortes')" data-srv="cortes" class="srv-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all">
+                        Cortes
+                    </button>
+                    <button type="button" onclick="filterServices('barba')" data-srv="barba" class="srv-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all">
+                        Barba y Rostro
+                    </button>
+                    <button type="button" onclick="filterServices('estetica')" data-srv="estetica" class="srv-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all">
+                        Estética y Combos
+                    </button>
+                </div>
+            </div>
+            <div id="services-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN RESERVAR -->
+    <section id="reservar" class="py-20 bg-dark-950 border-t border-white/10">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-b from-dark-800 to-dark-900 border border-gold-500/40 rounded-3xl p-6 sm:p-10 shadow-2xl">
+                <div class="grid lg:grid-cols-12 gap-8 items-start">
+                    <div class="lg:col-span-5 space-y-6">
+                        <h2 class="font-serif text-2xl font-extrabold text-white">RESERVA TU TURNO</h2>
+                        <p class="text-gray-300 text-sm leading-relaxed">
+                            Elige tu servicio y horario preferido para apartar tu silla directo en WhatsApp <strong class="text-emerald-400">(505) 8876-7598</strong>.
+                        </p>
+                        <div class="bg-dark-950/90 border border-white/10 rounded-2xl p-5 space-y-3.5">
+                            <div class="flex justify-between text-gray-300 text-sm gap-2">
+                                <span>Servicio:</span>
+                                <span id="summary-service" class="font-bold text-white text-right">Corte Fade / Degradado</span>
+                            </div>
+                            <div class="flex justify-between text-gray-400 text-xs">
+                                <span>Duración aprox.:</span>
+                                <span id="summary-duration" class="font-semibold text-gray-200">40 min</span>
+                            </div>
+                            <div class="border-t border-white/10 pt-2.5 flex justify-between items-center">
+                                <span class="font-bold text-white">Precio Estimado:</span>
+                                <span id="summary-price" class="text-2xl font-black text-gold-400">C$ 100</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form id="booking-form" onsubmit="sendWhatsAppBooking(event)" class="lg:col-span-7 space-y-4 bg-dark-950/70 p-5 sm:p-7 rounded-2xl border border-white/10">
+                        <div>
+                            <label for="client-name" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1.5">Tu Nombre *</label>
+                            <input type="text" id="client-name" required placeholder="Ej: José Martínez" class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/15 text-white text-sm focus:outline-none focus:border-gold-500">
+                        </div>
+                        <div>
+                            <label for="service-select" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1.5">Servicio *</label>
+                            <select id="service-select" onchange="updateBookingSummary()" required class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/15 text-white text-sm focus:outline-none focus:border-gold-500"></select>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="booking-date" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1.5">Fecha *</label>
+                                <input type="date" id="booking-date" required class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/15 text-white text-sm focus:outline-none focus:border-gold-500">
+                            </div>
+                            <div>
+                                <label for="booking-time" class="block text-xs font-bold uppercase tracking-wider text-gray-300 mb-1.5">Hora *</label>
+                                <select id="booking-time" required class="w-full px-4 py-3 rounded-xl bg-dark-800 border border-white/15 text-white text-sm focus:outline-none focus:border-gold-500">
+                                    <option value="09:00 AM">09:00 AM (Sáb-Dom)</option>
+                                    <option value="10:00 AM" selected>10:00 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="01:00 PM">01:00 PM</option>
+                                    <option value="02:00 PM">02:00 PM</option>
+                                    <option value="03:00 PM">03:00 PM</option>
+                                    <option value="04:00 PM">04:00 PM</option>
+                                    <option value="05:00 PM">05:00 PM</option>
+                                    <option value="06:00 PM">06:00 PM</option>
+                                    <option value="07:00 PM">07:00 PM</option>
+                                    <option value="08:00 PM">08:00 PM (Sáb-Dom)</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="submit" class="w-full py-4 px-6 rounded-xl bg-gradient-to-r from-emerald-500 to-green-600 hover:from-emerald-400 hover:to-green-500 text-white font-extrabold text-sm sm:text-base shadow-lg flex items-center justify-center gap-2.5 transition-all">
+                            <i class="fa-brands fa-whatsapp text-xl"></i>
+                            <span>Enviar Reserva al (505) 8876-7598</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CÓDIGOS QR (CON RESPALDO AUTOMÁTICO Y DESCARGA) -->
+    <section id="codigo-qr" class="py-20 bg-dark-900 border-t border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-gold-400 font-bold text-xs uppercase tracking-widest block mb-2">Escanea y Conecta</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-white mb-3">CÓDIGOS QR OFICIALES</h2>
+            <p class="text-gray-400 text-sm max-w-xl mx-auto mb-10">
+                Escanea con la cámara de tu celular para agendar por WhatsApp, seguirnos en Instagram o compartir nuestra página web.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                <!-- QR WhatsApp -->
+                <div class="bg-dark-950 border border-white/10 rounded-3xl p-6 flex flex-col items-center justify-between shadow-xl">
+                    <div class="mb-4">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase px-3 py-1 rounded-full bg-emerald-500/15 text-emerald-400 border border-emerald-500/30 mb-2">
+                            <i class="fa-brands fa-whatsapp"></i> WhatsApp Directo
+                        </span>
+                        <h3 class="text-white font-bold text-base">Reservar Cita</h3>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-2xl shadow-inner mx-auto flex items-center justify-center">
+                        <canvas id="qr-whatsapp" width="200" height="200" class="rounded-lg"></canvas>
+                        <img id="qr-whatsapp-fallback" alt="QR WhatsApp" class="hidden w-[200px] h-[200px] rounded-lg" />
+                    </div>
+                    <div class="mt-5 w-full space-y-2">
+                        <button type="button" onclick="downloadQR('qr-whatsapp', 'QR-WhatsApp-Barberia-YD.png')" class="w-full py-2.5 px-4 rounded-xl bg-dark-800 hover:bg-gold-500 text-gray-200 hover:text-dark-950 font-bold text-xs border border-white/10 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-download"></i> Descargar QR
+                        </button>
+                    </div>
+                </div>
+
+                <!-- QR Instagram -->
+                <div class="bg-dark-950 border border-gold-500/40 rounded-3xl p-6 flex flex-col items-center justify-between shadow-xl">
+                    <div class="mb-4">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase px-3 py-1 rounded-full bg-pink-500/15 text-pink-400 border border-pink-500/30 mb-2">
+                            <i class="fa-brands fa-instagram"></i> Instagram Oficial
+                        </span>
+                        <h3 class="text-white font-bold text-base">@barberia_cortes_y_estlios_yd</h3>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-2xl shadow-inner mx-auto flex items-center justify-center">
+                        <canvas id="qr-instagram" width="200" height="200" class="rounded-lg"></canvas>
+                        <img id="qr-instagram-fallback" alt="QR Instagram" class="hidden w-[200px] h-[200px] rounded-lg" />
+                    </div>
+                    <div class="mt-5 w-full space-y-2">
+                        <button type="button" onclick="downloadQR('qr-instagram', 'QR-Instagram-Barberia-YD.png')" class="w-full py-2.5 px-4 rounded-xl bg-gold-500 hover:bg-gold-400 text-dark-950 font-extrabold text-xs transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-download"></i> Descargar QR
+                        </button>
+                    </div>
+                </div>
+
+                <!-- QR Página Web / Catálogo -->
+                <div class="bg-dark-950 border border-white/10 rounded-3xl p-6 flex flex-col items-center justify-between shadow-xl">
+                    <div class="mb-4">
+                        <span class="inline-flex items-center gap-1.5 text-xs font-extrabold uppercase px-3 py-1 rounded-full bg-gold-500/15 text-gold-400 border border-gold-500/30 mb-2">
+                            <i class="fa-solid fa-globe"></i> Catálogo Web
+                        </span>
+                        <h3 class="text-white font-bold text-base">Compartir Página</h3>
+                    </div>
+                    <div class="bg-white p-3.5 rounded-2xl shadow-inner mx-auto flex items-center justify-center">
+                        <canvas id="qr-web" width="200" height="200" class="rounded-lg"></canvas>
+                        <img id="qr-web-fallback" alt="QR Web" class="hidden w-[200px] h-[200px] rounded-lg" />
+                    </div>
+                    <div class="mt-5 w-full space-y-2">
+                        <button type="button" onclick="downloadQR('qr-web', 'QR-Web-Barberia-YD.png')" class="w-full py-2.5 px-4 rounded-xl bg-dark-800 hover:bg-gold-500 text-gray-200 hover:text-dark-950 font-bold text-xs border border-white/10 transition-all flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-download"></i> Descargar QR
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN UBICACIÓN Y HORARIOS -->
+    <section id="ubicacion" class="py-20 bg-dark-950 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+                <div class="lg:col-span-5 bg-dark-900 border border-white/10 rounded-3xl p-6 sm:p-8 flex flex-col justify-between space-y-6">
+                    <div>
+                        <h3 class="font-serif text-2xl font-extrabold text-white mb-5">HORARIO DE ATENCIÓN</h3>
+                        <ul class="space-y-3 text-sm">
+                            <li class="flex justify-between py-2.5 border-b border-white/10 text-white">
+                                <span>Lunes a Viernes</span>
+                                <span class="text-gold-400 font-bold">10:00 AM - 7:00 PM</span>
+                            </li>
+                            <li class="flex justify-between py-2.5 border-b border-white/10 text-white">
+                                <span>Sábado y Domingo</span>
+                                <span class="text-emerald-400 font-bold">9:00 AM - 8:00 PM</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="bg-dark-950/80 border border-white/10 rounded-2xl p-4 space-y-2 text-xs text-gray-300">
+                        <div class="font-bold text-gold-400 uppercase tracking-wider">Referencia de llegada:</div>
+                        <p>KM 27 Carretera Sur, 2 cuadras arriba camino de Temoa, El Crucero, Nicaragua.</p>
+                    </div>
+                </div>
+                <div class="lg:col-span-7 bg-dark-900 border border-white/10 rounded-3xl p-6 sm:p-8">
+                    <h3 class="font-serif text-2xl font-extrabold text-white mb-2">UBICACIÓN</h3>
+                    <p class="text-gray-200 text-sm mb-4">📍 KM27 carretera sur 2 cuadras arriba camino de Temoa, El Crucero, Nicaragua</p>
+                    <div class="w-full h-72 rounded-2xl overflow-hidden bg-dark-950 border border-white/10">
+                        <iframe title="Mapa de Barbería Cortes y Estilos YD" src="https://maps.google.com/maps?q=El%20Crucero,%20Managua,%20Nicaragua&t=&z=14&ie=UTF8&iwloc=&output=embed" width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="bg-dark-950 border-t border-white/10 py-8 text-center text-xs text-gray-400">
+        <p>© 2026 Barbería Cortes y Estilos YD. Todos los derechos reservados.</p>
+        <p class="mt-2">Instagram: <a href="https://instagram.com/barberia_cortes_y_estlios_yd" target="_blank" rel="noopener noreferrer" class="text-gold-400 hover:underline">@barberia_cortes_y_estlios_yd</a></p>
+    </footer>
+
+    <!-- MODAL LIGHTBOX -->
+    <div id="lightbox-modal" onclick="if(event.target === this) closeLightbox()" class="fixed inset-0 z-50 hidden bg-black/90 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="relative max-w-3xl w-full bg-dark-900 border border-white/15 rounded-3xl overflow-hidden shadow-2xl">
+            <button type="button" onclick="closeLightbox()" aria-label="Cerrar" class="absolute top-4 right-4 w-10 h-10 rounded-full bg-dark-950/90 hover:bg-gold-500 text-white hover:text-dark-950 flex items-center justify-center z-10 transition-colors">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+            <div class="bg-black flex items-center justify-center max-h-[75vh]">
+                <img id="lightbox-img" src="" alt="Foto Ampliada" class="max-h-[75vh] w-auto object-contain">
+            </div>
+            <div class="p-5 flex justify-between items-center bg-dark-900 border-t border-white/10 gap-4">
+                <div>
+                    <span id="lightbox-tag" class="text-[10px] font-extrabold uppercase text-gold-400 block"></span>
+                    <h4 id="lightbox-title" class="text-white font-bold text-lg"></h4>
+                </div>
+                <a href="#reservar" onclick="closeLightbox()" class="bg-gold-500 hover:bg-gold-400 text-dark-950 font-extrabold text-xs px-5 py-3 rounded-xl shrink-0">Reservar</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const BARBER_CONFIG = {
+            whatsappNumber: "50588767598",
+            instagramUrl: "https://instagram.com/barberia_cortes_y_estlios_yd",
+            address: "KM27 carretera sur 2 cuadras arriba camino de Temoa, El Crucero, Nicaragua",
+            currency: "C$"
+        };
+
+        const GALLERY_DATA = [
+            {
+                type: "tiktok",
+                url: "https://vt.tiktok.com/ZSgQsKfwv/",
+                file: "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=600&auto=format&fit=crop&q=80",
+                title: "Video Oficial en TikTok",
+                tag: "TikTok",
+                category: "redes",
+                desc: "Toca aquí para ver nuestro video en TikTok."
+            },
+            {
+                type: "facebook",
+                url: "https://www.facebook.com/share/r/1A2VKoW6n8/",
+                file: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=600&auto=format&fit=crop&q=80",
+                title: "Video Oficial en Facebook Reels",
+                tag: "Facebook Reels",
+                category: "redes",
+                desc: "Toca aquí para ver nuestro video en Facebook."
+            },
+            {
+                file: "WhatsApp Image 2026-10-25 at 12.34.13 PM.jpeg",
+                fallbackFile: "1000378398.jpg",
+                type: "image",
+                title: "Equipo de Barbería YD en Acción",
+                tag: "Portada Oficial",
+                category: "local",
+                desc: "Nuestros barberos atendiendo en El Crucero."
+            },
+            {
+                file: "WhatsApp Image 2026-10-25 at 1.19.10 PM.jpeg",
+                fallbackFile: "1000365336.jpg",
+                type: "image",
+                title: "Corte Fade / Degradado Pulido",
+                tag: "Acabado Real",
+                category: "cortes",
+                desc: "Degradado limpio de alta precisión."
+            },
+            {
+                file: "WhatsApp Image 2026-10-25 at 1.19.09 PM (1).jpeg",
+                fallbackFile: "1000366642.jpg",
+                type: "image",
+                title: "Diseño y Perfilado de Cejas",
+                tag: "Estética",
+                category: "cortes",
+                desc: "Perfilado profesional de cejas."
+            },
+            {
+                file: "WhatsApp Image 2026-10-25 at 1.19.09 PM (2).jpeg",
+                fallbackFile: "1000369655.jpg",
+                type: "image",
+                title: "Corte para Niños",
+                tag: "Infantil",
+                category: "cortes",
+                desc: "Paciencia y estilo para los más pequeños."
+            },
+            {
+                file: "WhatsApp Image 2026-10-25 at 1.19.09 PM (3).jpeg",
+                fallbackFile: "1000369655.jpg",
+                type: "image",
+                title: "Antes y Después: Infantil",
+                tag: "Transformación",
+                category: "cortes",
+                desc: "Cambio total con raya lateral."
+            },
+            {
+                file: "WhatsApp Image 2026-10-25 at 1.19.10 PM (1).jpg",
+                fallbackFile: "1000378398.jpg",
+                type: "image",
+                title: "Atención de Primera",
+                tag: "Servicio",
+                category: "local",
+                desc: "Estaciones equipadas en El Crucero."
+            },
+            {
+                file: "WhatsApp Image 2026-10-25 at 1.19.10 PM (3).jpeg",
+                fallbackFile: "1000520836.jpg",
+                type: "image",
+                title: "Ceras Nishman y Navajas Dorco",
+                tag: "Productos",
+                category: "local",
+                desc: "Productos profesionales de alta gama."
+            }
+        ];
+
+        const SERVICES_DATA = [
+            { id: "corte-fade", name: "Corte Fade / Degradado", category: "cortes", price: 100, duration: "40 min", badge: "Especialidad", desc: "Skin Fade con acabado a navaja.", icon: "fa-scissors" },
+            { id: "corte-ninos", name: "Corte para Niños", category: "cortes", price: 90, duration: "35 min", badge: "Infantil", desc: "Corte clásico o moderno con línea.", icon: "fa-child-reaching" },
+            { id: "corte-varones", name: "Corte Varones / Estudiantil", category: "cortes", price: 90, duration: "30 min", badge: "", desc: "Corte clásico a tijera o máquina.", icon: "fa-user-check" },
+            { id: "barba-cejas", name: "Recorte de Barba y Cejas", category: "barba", price: 120, duration: "25 min", badge: "Precisión", desc: "Perfilado simétrico de barba y cejas.", icon: "fa-user-tie" },
+            { id: "afeitado", name: "Afeitado Tradicional", category: "barba", price: 50, duration: "25 min", badge: "", desc: "Afeitado suave con navaja nueva.", icon: "fa-spray-can-sparkles" },
+            { id: "facial", name: "Limpieza Facial Masculina", category: "barba", price: 120, duration: "30 min", badge: "Piel", desc: "Limpieza profunda de impurezas.", icon: "fa-spa" },
+            { id: "manicure-pedicure", name: "Manicure y Pedicure", category: "estetica", price: 200, duration: "45 min", badge: "Pizarra", desc: "Cuidado integral de manos y pies.", icon: "fa-hand-sparkles" },
+            { id: "combo-yd", name: "Combo Completo YD (Corte + Barba + Facial)", category: "estetica", price: 320, duration: "65 min", badge: "VIP", desc: "Corte + Barba + Cejas + Facial.", icon: "fa-crown" }
+        ];
+
+        // Manejo de errores de imágenes con doble respaldo (fallbackFile -> placehold.co)
+        function handleImageError(imgElement, fallbackSrc) {
+            if (fallbackSrc && imgElement.dataset.triedFallback !== "true") {
+                imgElement.dataset.triedFallback = "true";
+                imgElement.src = fallbackSrc;
+            } else {
+                imgElement.onerror = null;
+                imgElement.src = "https://placehold.co/600x500/161922/d4af37?text=Barberia+YD";
+            }
+        }
+
+        let currentGalleryFilter = 'todos';
+        function renderGallery(filter = 'todos') {
+            currentGalleryFilter = filter;
+            const grid = document.getElementById("gallery-grid");
+            const list = filter === 'todos' ? GALLERY_DATA : GALLERY_DATA.filter(item => item.category === filter);
+
+            grid.innerHTML = list.map((item, idx) => {
+                if (item.type === 'tiktok' || item.type === 'facebook') {
+                    const isTk = item.type === 'tiktok';
+                    return `
+                        <div onclick="window.open('${item.url}', '_blank', 'noopener,noreferrer')" class="group cursor-pointer relative rounded-2xl overflow-hidden bg-dark-900 border border-gold-500/40 h-80 shadow-xl">
+                            <img src="${item.file}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-60">
+                            <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/60 to-transparent flex flex-col justify-end p-5">
+                                <div class="flex items-center justify-between mb-1">
+                                    <span class="${isTk ? 'bg-pink-600' : 'bg-blue-600'} text-white text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-md flex items-center gap-1">
+                                        <i class="fa-brands ${isTk ? 'fa-tiktok' : 'fa-facebook'}"></i> ${item.tag}
+                                    </span>
+                                    <span class="w-8 h-8 rounded-full bg-gold-500 text-dark-950 flex items-center justify-center font-bold">
+                                        <i class="fa-solid fa-play text-xs"></i>
+                                    </span>
+                                </div>
+                                <h3 class="text-white font-bold text-base group-hover:text-gold-400 transition-colors">${item.title}</h3>
+                                <p class="text-gray-300 text-xs mt-1 line-clamp-2">${item.desc}</p>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                const fallbackAttr = item.fallbackFile ? item.fallbackFile.replace(/'/g, "\\'") : "";
+                return `
+                    <div onclick="openLightbox(${idx})" class="group cursor-pointer relative rounded-2xl overflow-hidden bg-dark-900 border border-white/10 h-80 shadow-xl">
+                        <img src="${item.file}" alt="${item.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="handleImageError(this, '${fallbackAttr}')">
+                        <div class="absolute inset-0 bg-gradient-to-t from-dark-950 via-dark-950/35 to-transparent flex flex-col justify-end p-5">
+                            <div class="flex items-center justify-between mb-1">
+                                <span class="bg-gold-500 text-dark-950 text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded-md">${item.tag}</span>
+                                <span class="w-8 h-8 rounded-full bg-dark-950/80 text-white flex items-center justify-center group-hover:bg-gold-500 group-hover:text-dark-950 transition-colors">
+                                    <i class="fa-solid fa-magnifying-glass-plus text-xs"></i>
+                                </span>
+                            </div>
+                            <h3 class="text-white font-bold text-base group-hover:text-gold-400 transition-colors">${item.title}</h3>
+                            <p class="text-gray-300 text-xs mt-1 line-clamp-2">${item.desc}</p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function filterGallery(cat) {
+            document.querySelectorAll('.gal-filter-btn').forEach(btn => {
+                if (btn.dataset.gal === cat) {
+                    btn.className = "gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-extrabold bg-gold-500 text-dark-950 shadow-lg shadow-gold-500/20 transition-all";
+                } else {
+                    btn.className = "gal-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all";
+                }
+            });
+            renderGallery(cat);
+        }
+
+        function openLightbox(index) {
+            const list = currentGalleryFilter === 'todos' ? GALLERY_DATA : GALLERY_DATA.filter(i => i.category === currentGalleryFilter);
+            const item = list[index];
+            if (!item || item.type !== 'image') return;
+
+            const lightboxImg = document.getElementById("lightbox-img");
+            delete lightboxImg.dataset.triedFallback;
+            lightboxImg.onerror = function() {
+                handleImageError(this, item.fallbackFile || '');
+            };
+            lightboxImg.src = item.file;
+
+            document.getElementById("lightbox-tag").textContent = item.tag;
+            document.getElementById("lightbox-title").textContent = item.title;
+            document.getElementById("lightbox-modal").classList.remove("hidden");
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox-modal").classList.add("hidden");
+        }
+
+        function filterServices(cat) {
+            document.querySelectorAll('.srv-filter-btn').forEach(btn => {
+                if (btn.dataset.srv === cat) {
+                    btn.className = "srv-filter-btn px-4 py-2.5 rounded-xl text-xs font-extrabold bg-gold-500 text-dark-950 shadow-lg transition-all";
+                } else {
+                    btn.className = "srv-filter-btn px-4 py-2.5 rounded-xl text-xs font-semibold bg-dark-800 text-gray-300 hover:text-white border border-white/10 transition-all";
+                }
+            });
+            renderServices(cat);
+        }
+
+        function renderServices(filter = "todos") {
+            const grid = document.getElementById("services-grid");
+            const filtered = filter === "todos" ? SERVICES_DATA : SERVICES_DATA.filter(s => s.category === filter);
+
+            grid.innerHTML = filtered.map(service => `
+                <div class="service-card bg-dark-950 border border-white/10 rounded-2xl p-6 flex flex-col justify-between relative overflow-hidden">
+                    ${service.badge ? `<span class="absolute top-4 right-4 bg-gold-500/20 text-gold-400 border border-gold-500/30 text-[10px] font-extrabold uppercase px-2.5 py-1 rounded-full">${service.badge}</span>` : ''}
+                    <div>
+                        <div class="w-11 h-11 rounded-xl bg-gold-500/10 border border-gold-500/30 flex items-center justify-center text-gold-400 mb-4">
+                            <i class="fa-solid ${service.icon} text-lg"></i>
+                        </div>
+                        <h3 class="text-lg font-extrabold text-white pr-20">${service.name}</h3>
+                        <p class="text-gray-400 text-xs sm:text-sm mt-2 leading-relaxed">${service.desc}</p>
+                    </div>
+                    <div class="mt-6 pt-4 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block"><i class="fa-regular fa-clock mr-1"></i>${service.duration}</span>
+                            <span class="text-2xl font-black text-gold-400">${BARBER_CONFIG.currency} ${service.price}</span>
+                        </div>
+                        <button type="button" onclick="selectServiceAndScroll('${service.id}')" class="bg-white/10 hover:bg-gold-500 text-white hover:text-dark-950 font-extrabold text-xs px-4 py-2.5 rounded-xl transition-all">
+                            Agendar
+                        </button>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function populateBookingSelect() {
+            const select = document.getElementById("service-select");
+            select.innerHTML = SERVICES_DATA.map(s => `<option value="${s.id}">${s.name} — ${BARBER_CONFIG.currency} ${s.price}</option>`).join('');
+            updateBookingSummary();
+        }
+
+        function updateBookingSummary() {
+            const select = document.getElementById("service-select");
+            const selected = SERVICES_DATA.find(s => s.id === select.value) || SERVICES_DATA[0];
+            document.getElementById("summary-service").textContent = selected.name;
+            document.getElementById("summary-duration").textContent = selected.duration;
+            document.getElementById("summary-price").textContent = `${BARBER_CONFIG.currency} ${selected.price}`;
+        }
+
+        function selectServiceAndScroll(serviceId) {
+            document.getElementById("service-select").value = serviceId;
+            updateBookingSummary();
+            document.getElementById("reservar").scrollIntoView({ behavior: "smooth" });
+        }
+
+        function sendWhatsAppBooking(event) {
+            event.preventDefault();
+            const name = document.getElementById("client-name").value.trim();
+            const serviceId = document.getElementById("service-select").value;
+            const date = document.getElementById("booking-date").value;
+            const time = document.getElementById("booking-time").value;
+            const service = SERVICES_DATA.find(s => s.id === serviceId) || SERVICES_DATA[0];
+
+            const message = [
+                `💈 *NUEVA CITA - BARBERÍA YD* 💈`,
+                `👤 *Cliente:* ${name}`,
+                `✂️ *Servicio:* ${service.name}`,
+                `💰 *Precio:* ${BARBER_CONFIG.currency} ${service.price}`,
+                `📅 *Fecha:* ${date}`,
+                `⏰ *Hora:* ${time}`,
+                `📍 *Dirección:* ${BARBER_CONFIG.address}`
+            ].join('\n');
+
+            window.open(`https://wa.me/${BARBER_CONFIG.whatsappNumber}?text=${encodeURIComponent(message)}`, '_blank', 'noopener,noreferrer');
+        }
+
+        // Generador de QR con respaldo automático de imagen API si falla el CDN de QRious
+        function renderSingleQR(canvasId, fallbackImgId, qrValue, fgColor = '#0e1015') {
+            const canvas = document.getElementById(canvasId);
+            const fallbackImg = document.getElementById(fallbackImgId);
+            if (!canvas) return;
+
+            if (typeof window.QRious === 'function') {
+                try {
+                    new QRious({
+                        element: canvas,
+                        value: qrValue,
+                        size: 200,
+                        level: 'H',
+                        background: '#ffffff',
+                        foreground: fgColor
+                    });
+                    canvas.classList.remove('hidden');
+                    if (fallbackImg) fallbackImg.classList.add('hidden');
+                    return;
+                } catch (err) {
+                    console.warn("Error en QRious, activando respaldo:", err);
+                }
+            }
+
+            // Respaldo por API si QRious no cargó
+            if (fallbackImg) {
+                canvas.classList.add('hidden');
+                fallbackImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&margin=6&data=${encodeURIComponent(qrValue)}`;
+                fallbackImg.classList.remove('hidden');
+            }
+        }
+
+        function generateAllQRCodes() {
+            const waUrl = `https://wa.me/${BARBER_CONFIG.whatsappNumber}?text=${encodeURIComponent("Hola Barbería Cortes y Estilos YD, quiero reservar una cita.")}`;
+            const igUrl = BARBER_CONFIG.instagramUrl;
+            const currentUrl = (window.location.href && !window.location.href.startsWith('file:'))
+                ? window.location.href.split('#')[0]
+                : waUrl;
+
+            renderSingleQR('qr-whatsapp', 'qr-whatsapp-fallback', waUrl, '#0e1015');
+            renderSingleQR('qr-instagram', 'qr-instagram-fallback', igUrl, '#1b2642');
+            renderSingleQR('qr-web', 'qr-web-fallback', currentUrl, '#0e1015');
+        }
+
+        function downloadQR(canvasId, filename) {
+            const canvas = document.getElementById(canvasId);
+            if (canvas && !canvas.classList.contains('hidden')) {
+                const link = document.createElement('a');
+                link.download = filename;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            } else {
+                const fallbackImg = document.getElementById(`${canvasId}-fallback`);
+                if (fallbackImg && fallbackImg.src) {
+                    window.open(fallbackImg.src, '_blank', 'noopener,noreferrer');
+                }
+            }
+        }
+
+        function setupMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            const icon = document.getElementById('mobile-menu-icon');
+
+            if (!btn || !menu) return;
+
+            btn.addEventListener('click', () => {
+                const isHidden = menu.classList.toggle('hidden');
+                btn.setAttribute('aria-expanded', String(!isHidden));
+                if (icon) {
+                    icon.className = isHidden ? 'fa-solid fa-bars text-xl' : 'fa-solid fa-xmark text-xl';
+                }
+            });
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    btn.setAttribute('aria-expanded', 'false');
+                    if (icon) icon.className = 'fa-solid fa-bars text-xl';
+                });
+            });
+        }
+
+        function setLocalTodayDate() {
+            const dateInput = document.getElementById("booking-date");
+            if (!dateInput) return;
+            const now = new Date();
+            const year = now.getFullYear();
+            const month = String(now.getMonth() + 1).padStart(2, '0');
+            const day = String(now.getDate()).padStart(2, '0');
+            const localToday = `${year}-${month}-${day}`;
+            dateInput.value = localToday;
+            dateInput.min = localToday;
+        }
+
+        // Cerrar modal con tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            setLocalTodayDate();
+            setupMobileMenu();
+            renderGallery('todos');
+            renderServices('todos');
+            populateBookingSelect();
+            generateAllQRCodes();
+        });
+
+        // Reintentar por seguridad al terminar de cargar scripts externos
+        window.addEventListener('load', generateAllQRCodes);
+    </script>
+</body>
+</html>
